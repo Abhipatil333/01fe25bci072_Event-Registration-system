@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    width: 80%;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Events{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.Event {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.Event h3 {
+    color: #2980b9;
+}
+
+#errorMessage {
+    color: red;
+    font-weight: bold;
+}
+
+#loginMessage {
+    color: green;
+    font-weight: bold;
+}
+
+.confirmation {
+    display: none;
+    border: 2px solid green;
+}
+
+.confirmation h2 {
+    color: green;
+}
+@media (max-width: 700px) {
+
+    .Events {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Event Registration System</h1>
+        <p>College Events</p>
+    </header>
+
+    <section class="container">
+        <h2>Student Registration / Login</h2>
+        <form id="loginForm">
+            <label>Student Name:</label>
+            <input type="text" id="studentName">
+
+            <label>Email:</label>
+            <input type="email" id="loginEmail">
+
+            <label>Password:</label>
+            <input type="password" id="password">
+
+            <button type="submit">Login</button>
+        </form>
+        <p id="loginMessage"></p>
+    </section>
+
+    <section class="container">
+        <h2>Event Dashboard</h2>
+        <div class="Events">
+            <div class="Event">
+                <h3>Pladies</h3>
+                <p><b>Description:</b> A</p>
+                <p><b>Date:</b> 28-08-2026</p>
+                <p><b>Venue:</b> Gymkhana</p>
+                <p><b>Schedule:</b> At 4:00 PM</p>
+                <p><b>Activities:</b> Music</p>
+            </div>
+
+            <div class="Event">
+                <h3>Euphoria</h3>
+                <p><b>Description:</b> B</p>
+                <p><b>Date:</b> 28-09-2026</p>
+                <p><b>Venue:</b> Arena</p>
+                <p><b>Schedule:</b> At 6:00 PM</p>
+                <p><b>Activities:</b> Sports</p>
+            </div>
+
+            <div class="Event">
+                <h3>Freshers</h3>
+                <p><b>Description:</b> C</p>
+                <p><b>Date:</b> 28-10-2026</p>
+                <p><b>Venue:</b> Near Vindhya Hostel</p>
+                <p><b>Schedule:</b> At 7:30 PM</p>
+                <p><b>Activities:</b> Comedy</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2>Event Registration</h2>
+        <form id="registrationForm">
+            <label>Student Name:</label>
+            <input type="text" id="registerName" required>
+
+            <label>USN / Roll Number:</label>
+            <input type="text" id="usn" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Department:</label>
+            <input type="text" id="department">
+
+            <label>Event Selection:</label>
+            <select id="Event" required>
+                <option value="">Select an event</option>
+                <option value="pladies">Pladies</option>
+                <option value="euphoria">Euphoria</option>
+                <option value="Freshers">Freshers</option>
+            </select>
+
+            <label>Registration Date:</label>
+            <input type="date" id="registrationDate" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="errorMessage"></p>
+    </section>
+
+    <section class="container confirmation" id="confirmation">
+        <h2>Registration Successful!</h2>
+        <p>
+            <b>Student Name:</b>
+            <span id="confirmName"></span>
+        </p>
+
+        <p>
+            <b>Selected Event:</b>
+            <span id="confirmevent"></span>
+        </p>
+        
+        <p>
+            <b>Registration Date:</b>
+            <span id="confirmRegistrationDate"></span>
+        </p>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

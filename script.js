@@ -1,6 +1,6 @@
 let Events = [
     {
-        name: "pladies",
+        name: "Pladies",
         desc: "A",
         date: "28-08-2026",
         Venue: "Gymkhana",
@@ -8,7 +8,7 @@ let Events = [
         Activities: "Music"
     },
     {
-        name: "euphoria",
+        name: "Euphoria",
         desc: "B",
         date: "28-09-2026",
         Venue: "Arena",
